@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Smart Attendance System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .attendance-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .btn-custom {
+            margin: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="attendance-container">
+        <h2>Upload Class Photo for Attendance</h2>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="class_photo" class="form-control" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-custom">Upload Class Photo</button>
+        </form>
+    </div>
+</body>
+</html>

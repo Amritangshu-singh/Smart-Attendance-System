@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Page Styles */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-container {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header Section */
+        .header {
+            background-image: url('image/sddefault.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            border-bottom: 5px solid #007bff;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center; /* Center header text */
+        }
+
+        .header p {
+            font-size: 1.5rem;
+            text-align: center; /* Center header paragraph */
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        /* Project Info and Event Sections */
+        .project-info, .university-life {
+            margin: 30px auto; /* Center the section */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px; /* Limit width for better readability */
+            text-align: center; /* Center text in sections */
+        }
+
+        /* Member Card Styles */
+        .card {
+            margin-bottom: 20px;
+            border: none; 
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover; 
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center; /* Center footer text */
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1.2rem;
+            }
+
+            .project-info h3, .university-life h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid main-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Smart Attendance System</h1>
+            <p>Your reliable partner for attendance management</p>
+        </div>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SAS Portal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Project Info Section -->
+        <div class="container project-info">
+            <h2>Project Information</h2>
+            <h3>Project Title: Smart Attendance System</h3>
+            <p>
+                The Smart Attendance System leverages advanced facial recognition technology to automate and streamline the attendance marking process. 
+                This innovative solution significantly enhances the accuracy and efficiency of attendance management in educational institutions. 
+                By utilizing a simple group photo, the system can recognize individual students and automatically mark their attendance, reducing manual errors 
+                and saving valuable time for educators and students alike.
+            </p>
+            
+            <h3>Team Members</h3>
+            <div class="row justify-content-center"> <!-- Center the cards -->
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="image\Nawneet_Raj.jpg" class="card-img-top" alt="Nawneet Raj">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nawneet Raj</h5>
+                            <a href="https://www.linkedin.com/in/nawneetraj" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="image\Khyati_Raj.jpg" class="card-img-top" alt="Khyati Raj">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Khyati Raj</h5>
+                            <a href="https://www.linkedin.com/in/khyatiraj" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="image\Amritangshu_Singh.jpg" class="card-img-top" alt="Amritangshu Singh">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Amritangshu Singh</h5>
+                            <a href="https://www.linkedin.com/in/amritangshusingh" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="image\aditya.jpg" class="card-img-top" alt="Aditya Kumar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Aditya Kumar</h5>
+                            <a href="https://www.linkedin.com/in/adityakumar" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card">
+                        <img src="image\Hans_Raj.jpg" class="card-img-top" alt="Hans Raj">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hans Raj</h5>
+                            <a href="https://www.linkedin.com/in/hansraj" target="_blank" class="btn btn-primary">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- University Life Section -->
+        <div class="container university-life">
+            <h2>University Life</h2>
+            <p>Explore the vibrant and enriching experiences that our team members have had during their time at university.</p>
+
+            <div class="row justify-content-center"> <!-- Center the cards -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image\IMG20241023152326.jpg" class="card-img-top" alt="Classes">
+                        <div class="card-body">
+                            <h5 class="card-title">Classes</h5>
+                            <p class="card-text">Engaging classes with experienced faculty, interactive learning sessions, and a focus on practical knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image\IMG_6427.jpg" class="card-img-top" alt="Industrial Visit">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Visit</h5>
+                            <p class="card-text">Field trips to various industries, providing students with insights into real-world applications of their studies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/university_area.jpg" class="card-img-top" alt="University Area">
+                        <div class="card-body">
+                            <h5 class="card-title">University Area</h5>
+                            <p class="card-text">A beautiful campus with modern facilities, fostering an inspiring environment for students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Smart Attendance System. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
